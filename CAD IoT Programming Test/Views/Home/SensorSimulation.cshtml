@@ -1,0 +1,136 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="button" id="buttonToggle" class="btn btn-success" onclick="changeColor('buttonToggle')">Start</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Room Area 1</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col col-5">
+            <h2>Temperature</h2>
+            <canvas id="Room1T" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxT1">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minT1">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medT1">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgT1">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+        <span class="border"></span>
+        <div class="col col-5">
+            <h2>Humidity</h2>
+            <canvas id="Room1H" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxH1">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minH1">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medH1">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgH1">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Room Area 2</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col col-5">
+            <h2>Temperature</h2>
+            <canvas id="Room2T" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxT2">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minT2">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medT2">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgT2">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+        <span class="border"></span>
+        <div class="col col-5">
+            <h2>Humidity</h2>
+            <canvas id="Room2H" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxH2">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minH2">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medH2">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgH2">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Room Area 3</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col col-5">
+            <h2>Temperature</h2>
+            <canvas id="Room3T" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxT3">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minT3">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medT3">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgT3">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+        <span class="border"></span>
+        <div class="col col-5">
+            <h2>Humidity</h2>
+            <canvas id="Room3H" width="200" height="200"></canvas>
+            <div class="row">
+                <div class="col-3 h2 bg-danger" align="center" id="maxH3">N/A</div>
+                <div class="col-3 h2 bg-info" align="center" id="minH3">N/A</div>
+                <div class="col-3 h2 bg-warning" align="center" id="medH3">N/A</div>
+                <div class="col-3 h2 bg-success" align="center" id="avgH3">N/A</div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-danger" align="center">Max</div>
+                <div class="col-3 bg-info" align="center">Min</div>
+                <div class="col-3 bg-warning" align="center">Median</div>
+                <div class="col-3 bg-success" align="center">Average</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/site.js" asp-append-version="true"></script>

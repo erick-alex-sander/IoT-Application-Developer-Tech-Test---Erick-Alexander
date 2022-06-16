@@ -1,0 +1,82 @@
+﻿@model IEnumerable<CAD_IoT_Programming_Test.Models.SensorAggregation.SensorDisplay>
+
+@{
+    ViewData["Title"] = "SensorAggregation";
+}
+
+<h1>SensorAggregation</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomArea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateStamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvgT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedianT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvgH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedianH)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomArea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvgT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedianT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvgH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedianH)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
